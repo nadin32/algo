@@ -1,8 +1,8 @@
-# algo
+# Algorythms.
 
-Search
+## Searches ##
 
-BFS 
+### BFS  ## 
 
 Algorithm BFS(G, v)
 
