@@ -12,7 +12,12 @@
 ### BFS  ##
 
 Links: https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/the-breadth-first-search-algorithm
+
        https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec9.pdf
+       
+       https://www.programiz.com/dsa/graph-bfs
+ 
+       https://github.com/maximelamure/algorithms/blob/master/datastructure/graph_bfs.go
 
 
 Breadth–first search (BFS) is a graph traversal algorithm that explores vertices in the
