@@ -9,25 +9,40 @@
 
 ## Searches ##
 
-### BFS  ## 
+### BFS  ##
+
+Links: https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/the-breadth-first-search-algorithm
+       https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec9.pdf
+
+
+Breadth–first search (BFS) is a graph traversal algorithm that explores vertices in the
+
+order of their distance from the source vertex,where distance is the minimum length of a path from the source vertex to the node.
+
+**BFS Algorithm Complexity**
+
+The time complexity of the BFS algorithm is represented in the form of O(V + E), where V is the number of nodes and E is the number of edges.
+
+The space complexity of the algorithm is O(V).
+ mark and enqueue all (unvisited) neighbours of u
 
 Algorithm BFS(G, v)
 
-    Q ← new empty FIFO queue
+    create Q ← new empty FIFO queue
     
-    Mark v as visited.
-    
-    Q.enqueue(v)
+    Mark v as visited .
+  
+    Q.enqueue(v)   //put v in into Q 
     
     while Q is not empty
-    
-        a ← Q.dequeue()
         
-        // Perform some operation on a.
+        u ← Q.dequeue() //remove the head  u of Q
         
-        for all unvisited neighbors x of a
+        // Perform some operation on u.
+        
+        for all unvisited neighbors x of u
         
             Mark x as visited.
             
-            Q.enqueue(x)
+            Q.enqueue(x) // put x into Q
             
