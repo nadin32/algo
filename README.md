@@ -12,11 +12,8 @@
 ### BFS  ## 
 
 Algorithm BFS(G, v)
-
     Q ← new empty FIFO queue
-    
     Mark v as visited.
-    
     Q.enqueue(v)
     
     while Q is not empty
