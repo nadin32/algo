@@ -56,9 +56,17 @@ Algorithm BFS(G, v)
 **2.DepthFirst Search** 
             
 
-**3.DDijkstra**
+**3.Dijkstra**
 
 Links : https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e
+
+Dijkstra's Algorithm works on the basis that any subpath B -> D of the shortest path A -> D between vertices A and D is also the shortest path between vertices B and D.
+
+Dijkstra's Algorithm Complexity
+
+Time Complexity: O(E Log V) where, E is the number of edges and V is the number of vertices.
+
+Space Complexity: O(V)
 
 
             
