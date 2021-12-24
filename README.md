@@ -24,7 +24,7 @@ Breadth–first search (BFS) is a graph traversal algorithm that explores vertic
 
 order of their distance from the source vertex,where distance is the minimum length of a path from the source vertex to the node.
 
-**BFS Algorithm Complexity**
+**1. BFS Algorithm Complexity**
 
 The time complexity of the BFS algorithm is represented in the form of O(V + E), where V is the number of nodes and E is the number of edges.
 
@@ -50,4 +50,15 @@ Algorithm BFS(G, v)
             Mark x as visited.
             
             Q.enqueue(x) // put x into Q
+            
+
+
+**2.DepthFirst Search** 
+            
+
+**3.DDijkstra**
+
+Links : https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e
+
+
             
