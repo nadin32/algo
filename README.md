@@ -8,8 +8,20 @@
 # Algorithms.
 
 ## Searches ##
+FIND/SEARCH
 
-### BFS  ##
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
+### 1.Linear search  ##
+
+Sequenatial search of locating the element in the list.
+O(n) worst case.
+
+
+### 2.Binary search  ##
+
+
+
+### 3.BFS  ##
 
 Links: https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/the-breadth-first-search-algorithm
 
@@ -24,7 +36,7 @@ Breadth–first search (BFS) is a graph traversal algorithm that explores vertic
 
 order of their distance from the source vertex,where distance is the minimum length of a path from the source vertex to the node.
 
-**1. BFS Algorithm Complexity**
+**BFS Algorithm Complexity**
 
 The time complexity of the BFS algorithm is represented in the form of O(V + E), where V is the number of nodes and E is the number of edges.
 
@@ -53,10 +65,10 @@ Algorithm BFS(G, v)
             
 
 
-**2.DepthFirst Search** 
+**4.DepthFirst Search** 
             
 
-**3.Dijkstra**
+**5.Dijkstra**
 
 Links : https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e
         https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/
