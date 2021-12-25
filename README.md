@@ -8,7 +8,7 @@
 # Algorithms.
 
 ## Sorting ##
-FIND/SEARCH
+
 
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
 
