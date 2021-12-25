@@ -17,8 +17,16 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-in
 ### 1.Linear search  ##
 
 Sequenatial search of locating the element in the list.
+A simple approach is to do a linear search, i.e  find lemen xin in the list.
+
+    Start from the leftmost element of list[] and one by one compare x with each element of list[]
+    If x matches with an element, return the index.
+    If x doesn’t match with any of elements, return -1.
+    
+Performance.
 O(n) worst case.
 
+Linear search is rarely used practically because other search algorithms such as the binary search algorithm and hash tables allow significantly faster-searching comparison to Linear search.
 
 ### 2.Binary search  ##
 
