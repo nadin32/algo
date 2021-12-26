@@ -1,6 +1,81 @@
 <details>
-           <summary>Title 1</summary>
-           <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+           <summary>DataStructures</summary>
+           <p>[**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
+	🎁Hash Tables
+		![image](attached://008d8d5fbe7759015b102fb5e61eedf7 125x150)             
+		
+		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
+		Improve Time Complexity?
+			Fast Access O(1), tradeoff: more memory O(n) 
+		Collision?
+			Linked List
+	🎁Graphs
+		Shortest Path?
+			🚀 Bellman-Ford
+			🚀 Dijkstra
+		Cyclic or Acyclic?
+		Weighted or Unweighted?
+		Graph Traversal? **O(n)**
+			🚀 Breadth First Search (BFS)
+			🚀 Depth First Search (DFS)
+				Inorder
+				Postorder
+				Preorder
+		Directed or Undirected?
+		🎁Tree
+			 Tree Traversal? **O(n)**
+				
+				
+				**Recursion?**
+					Be mindful of Space Complexity! (Stack overflow)
+			🎁Linked List
+				🎁Singly Linked List
+					 ![image](attached://7df06ec4ad27f2f697ec682ddb5aed6c 125x150)
+				🎁Doubly Linked List 
+					
+			🎁Binary Tree
+				🎁Binary Search Tree
+					🎁Balanced BST
+						🎁AVL Tree
+						🎁Red Black Tree
+						![image](attached://1cbd9dae9e063cb5b0294abfc41bc600 125x150)
+			🎁Heap
+				🎁Binary Heap
+					Priority Queue
+					![image](attached://26b117268285c9e89ade0640e6ca4147 125x150)
+			🎁Trie
+	🎁Arrays
+		Sorting? ~ **O(N log N)**
+			Radix Sort 🚀
+			Quick Sort 🚀
+			Heap Sort 🚀
+			Bubble Sort 🚀
+			Selection Sort 🚀
+			Insertion Sort 🚀
+			Merge Sort 🚀
+			Counting Sort 🚀
+		String question? 
+			Turn it into an Array ~ split() 🚀
+		Static
+			 ![image](attached://6aa87955d9d6283c9bd60c7f4e0c6d8c 125x150)
+		Dynamic
+			 ![image](attached://0f574b0c427c0cf20e9c03ccb546d71c 125x150)
+			
+			** can be O(n) on expanding memory
+		Searching. Is it sorted?
+			Yes - Divide and Conquer - **Binary search O(log N)** 🚀
+			No. Will sorting make it faster? If still no, **Linear Search**🚀
+			No. Is it a String? See if a **Trie** data structure helps
+	🎁Stacks
+		Array Stack
+		Linked List Stack
+		![image](attached://a03fa110a9697e07ac4979d9e8a61d57 125x150)
+	🎁Queues
+		Array Queue (BAD)
+		Linked List Queue
+		![image](attached://afc27bd2c74ddef65f4905665d511006 125x150)
+	Dynamic Programming
+		🚀Memoization</p>
 </details>
 
 --------------------
