@@ -10,9 +10,9 @@ Algorithm	Time Complexity	                        Space Complexity
 
             Best	    Average	      Worst	        Worst
 	    
-Quicksort	Ω(n log(n))	Θ(n log(n))	  O(n^2)	    O(log(n))
+Quicksort   Ω(n log(n))    Θ(n log(n))    O(n^2)    O(log(n))
 
-Mergesort	Ω(n log(n))	Θ(n log(n))	  O(n log(n))	O(n)
+MergesortΩ(n log(n))	Θ(n log(n))	  O(n log(n))	O(n)
 
 Timsort   	Ω(n)	    Θ(n log(n))	  O(n log(n))	O(n)
 
