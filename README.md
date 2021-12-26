@@ -6,9 +6,7 @@
 
 ## Sorting ##
 
-Algorithm	Time Complexity	                        Space Complexity
-
-            Best	    Average	      Worst	        Worst
+Algorithm	Time Complexity	                        Space Complexity Best	    Average	      Worst	        Worst
 	    
 Quicksort   Ω(n log(n))    Θ(n log(n))    O(n^2)    O(log(n))
 
