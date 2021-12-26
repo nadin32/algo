@@ -6,16 +6,16 @@
 	🎁Hash Tables
 		<table>
 		<tr>	
-		<td>space</><td>      O(n)</>
+		<td>space</td><td>      O(n)</td>
 		</tr>	
 			<tr>	
-		<td>insert/><td>      O(1)</>
+		<td>insert></td><td>      O(1)</td>
 		</tr>
 			<tr>	
-		<td>lookup</><td>      O(1)</>
+		<td>lookup </td><td>      O(1)</td>
 		</tr>
 			<tr>	
-		<td>delete</><td>      O(1)</>
+		<td>delete</td><td>      O(1)</td>
 		</tr>
 
 		</table>	
