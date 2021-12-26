@@ -5,19 +5,9 @@
 		   
 	🎁Hash Tables
 		<table>
-		<tr>	
-		<td>space</td><td>      O(n)</td>
+		<tr>	<td>space</td><td>      O(n)</td>
 		</tr>	
-			<tr>	
-		<td>insert></td><td>      O(1)</td>
-		</tr>
-			<tr>	
-		<td>lookup </td><td>      O(1)</td>
-		</tr>
-			<tr>	
-		<td>delete</td><td>      O(1)</td>
-		</tr>
-
+		 
 		</table>	
 		   
 		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
