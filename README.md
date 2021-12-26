@@ -4,8 +4,12 @@
 		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
 		   
 	🎁Hash Tables
-		![image](attached://008d8d5fbe7759015b102fb5e61eedf7 125x150)             
-		
+		           
+		space      O(n)
+		insert     O(1)
+		lookup     O(1)   
+		delete     O(1) 
+		   
 		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
 		Improve Time Complexity?
 			Fast Access O(1), tradeoff: more memory O(n) 
