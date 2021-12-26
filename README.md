@@ -1,5 +1,5 @@
 <details>
-           <summary>##DataStructures##</summary>
+           <summary><b>DataStructure</b></summary>
            <p>
 		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
 		   
