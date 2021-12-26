@@ -6,21 +6,21 @@
 
 ## Sorting ##
 
-|Sorting Algorithm|Average Case|Best Case|Worst Case| 
-|-----------------|------------|---------|----------|  
-|Bubble Sort |O(n^2)| O(n) | O(n^2)|  
-|Insertion Sort|O(n^2)| O(n) | O(n^2)|  
-|Selection Sort|O(n^2)| O(n^2) | O(n^2)|   
-|Quick Sort|O(n.log(n))|O(n.log(n))|O(n^2)|  
-|Merge Sort|O(n.log(n))|O(n.log(n))|O(n.log(n))|  
-|Heap Sort|O(n.log(n))|	O(n.log(n))|	O(n.log(n))|
-|Counting Sort|O(n+k)|	O(n+k)|	O(n+k)|  
-|Radix Sort|O(n.k)|	O(n.k)|	O(n.k)|  
-|Bucket Sort|O(n+k)|	O(n+k)|	O(n2) |
-|-----------------|------------|---------|----------|  
-|-----------------|------------|---------|----------|  
-|-----------------|------------|---------|----------|  
-|-----------------|------------|---------|----------|  
+|Sorting Algorithm|Average Case|Best Case|Worst Case|description| advantages| disatvantages|
+|-----------------|------------|---------|----------|-----------| ----------|-----------|  
+|Bubble Sort |O(n^2)| O(n) | O(n^2)|repeatedly compares and swaps(if needed) adjacent elements in every pass. In i-th pass of Bubble Sort (ascending order), last (i-1) elements are already sorted, and i-th largest element is placed at (N-i)-th position, i.e. i-th last position. |1) It is the simplest sorting approach. 2) Best case complexity is of O(N) [for optimized approach] while the array is sorted.3) Using optimized approach, it can detect already sorted array in first pass with time complexity of O(N).4) Stable sort: does not change the relative order of elements with equal keys.In-Place sort.|is comparatively slower algorithm.| 
+|Insertion Sort|O(n^2)| O(n) | O(n^2)|  |----------|-----------| 
+|Selection Sort|O(n^2)| O(n^2) | O(n^2)|  | ----------|-----------| 
+|Quick Sort|O(n.log(n))|O(n.log(n))|O(n^2)|  |----------|-----------| 
+|Merge Sort|O(n.log(n))|O(n.log(n))|O(n.log(n))|  |----------|-----------| 
+|Heap Sort|O(n.log(n))|	O(n.log(n))|	O(n.log(n))||----------|-----------| 
+|Counting Sort|O(n+k)|	O(n+k)|	O(n+k)| | ----------|-----------| 
+|Radix Sort|O(n.k)|	O(n.k)|	O(n.k)|  |----------|-----------| 
+|Bucket Sort|O(n+k)|	O(n+k)|	O(n2) ||----------|-----------| 
+|-----------------|------------|---------|----------|  |----------|-----------| 
+|-----------------|------------|---------|----------|  |----------|-----------| 
+|-----------------|------------|---------|----------|  |----------|-----------| 
+|-----------------|------------|---------|----------|  |----------|-----------| 
 
 			
 
