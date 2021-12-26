@@ -4,13 +4,14 @@
 		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
 		   
 	🎁Hash Tables
-		<table>
-		<tr>	<td>space</td><td>      O(n)</td>
-		</tr>	
-		 
-		</table>	
+		
+		**space**   O(n)
+		**insert**  O(1)
+		**lookup**  O(1)
+		**delete**  O(1) 
 		   
 		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
+		
 		Improve Time Complexity?
 			Fast Access O(1), tradeoff: more memory O(n) 
 		Collision?
@@ -63,12 +64,19 @@
 		String question? 
 			Turn it into an Array ~ split() 🚀
 		Static
-			 ![image](attached://6aa87955d9d6283c9bd60c7f4e0c6d8c 125x150)
+			 **lookup**   O(1)
+			 **push**    O(1)
+			 **insert**  O(n)
+		         **delete**  O(n) 
+		   
 		Dynamic
-			 ![image](attached://0f574b0c427c0cf20e9c03ccb546d71c 125x150)
-			
+			 **lookup**   O(1)
+			 **append***    O(1)
+			 **insert**  O(n)
+		         **delete**  O(n) 
+		
 			** can be O(n) on expanding memory
-		Searching. Is it sorted?
+	        Searching. Is it sorted?
 			Yes - Divide and Conquer - **Binary search O(log N)** 🚀
 			No. Will sorting make it faster? If still no, **Linear Search**🚀
 			No. Is it a String? See if a **Trie** data structure helps
