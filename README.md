@@ -1,6 +1,7 @@
 <details>
            <summary>DataStructures</summary>
-           <p>[**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
+           <p>
+		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
 	🎁Hash Tables
 		![image](attached://008d8d5fbe7759015b102fb5e61eedf7 125x150)             
 		
