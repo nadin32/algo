@@ -1,116 +1,8 @@
-<details>
-           <summary><b>DataStructure</b></summary>
-           <p>
-		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
-		   
-	🎁Hash Tables
-		
-		| space |   O(n)
-		| insert|  O(1)
-		| lookup|  O(1)
-		| delete|  O(1) 
-		   
-		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
-		
-		Improve Time Complexity?
-			Fast Access O(1), tradeoff: more memory O(n) 
-		Collision?
-			Linked List
-	🎁Graphs
-		Shortest Path?
-			🚀 Bellman-Ford
-			🚀 Dijkstra
-		Cyclic or Acyclic?
-		Weighted or Unweighted?
-		Graph Traversal? **O(n)**
-			🚀 Breadth First Search (BFS)
-			🚀 Depth First Search (DFS)
-				Inorder
-				Postorder
-				Preorder
-		Directed or Undirected?
-		🎁Tree
-			 Tree Traversal? **O(n)**
-				
-				
-				**Recursion?**
-					Be mindful of Space Complexity! (Stack overflow)
-			🎁Linked List
-				🎁Singly Linked List
-					| prepend|  O(1)
-		    			| append |  O(1)
-					| lookup |  O(n)
-					| insert |  O(n)
-					| delete |  O(n) 
-				🎁Doubly Linked List 
-					
-			🎁Binary Tree
-				🎁Binary Search Tree
-					🎁Balanced BST
-						🎁AVL Tree
-						🎁Red Black Tree				 	    				
-						| lookup |  O(logN)
-						| insert |  O(logN)
-						| delete |  O(logN) 
-			🎁Heap
-				🎁Binary Heap
-		 			| lookup |  O(N)
-					| insert |  O(logN)
-					| delete |  O(logN) 
-				Priority Queue
 
-			🎁Trie
-	🎁Arrays
-		Sorting? ~ **O(N log N)**
-			Radix Sort 🚀
-			Quick Sort 🚀
-			Heap Sort 🚀
-			Bubble Sort 🚀
-			Selection Sort 🚀
-			Insertion Sort 🚀
-			Merge Sort 🚀
-			Counting Sort 🚀
-		String question? 
-			Turn it into an Array ~ split() 🚀
-		Static
-			 | lookup |    O(1)
-			 | push   |    O(1)
-			 | insert |    O(n)
-		         | delete |    O(n) 
-		   
-		Dynamic
-			 | lookup |    O(1)
-			 | append*|    O(1)
-			 | insert |    O(n)
-		         | delete |    O(n) 
-		
-			** can be O(n) on expanding memory
-	        Searching. Is it sorted?
-			Yes - Divide and Conquer - **Binary search O(log N)** 🚀
-			No. Will sorting make it faster? If still no, **Linear Search**🚀
-			No. Is it a String? See if a **Trie** data structure helps
-	🎁Stacks
-		Array Stack
-		Linked List Stack
-		         | lookup |    O(n)
-			 | pop    |    O(1)
-			 | push   |    O(1)
-		         | peek   |    O(1) 
-	🎁Queues
-		Array Queue (BAD)
-		Linked List Queue
-			 | lookup |    O(n)
-			 | enqueue|    O(1)
-			 | dequeue|    O(1)
-		         | peek   |    O(1) 
-	Dynamic Programming
-		🚀Memoization</p>
-	
-</details>
 
 --------------------
 
-## Algorithms ##.
+## Algorithms.
 
 ## Sorting ##
 
@@ -227,4 +119,115 @@ Space Complexity: O(V)
 ….b) Include u to sptSet. 
 ….c) Update distance value of all adjacent vertices of u. To update the distance values, iterate through all adjacent vertices. For every adjacent vertex v, if the sum of distance value of u (from source) and weight of edge u-v, is less than the distance value of v, then update the distance value of v. 
 
-            
+ 
+------------------- 
+ 
+<details>
+           <summary><b>DataStructure</b></summary>
+           <p>
+		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
+		   
+	🎁Hash Tables
+		
+		| space |   O(n)
+		| insert|  O(1)
+		| lookup|  O(1)
+		| delete|  O(1) 
+		   
+		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
+		
+		Improve Time Complexity?
+			Fast Access O(1), tradeoff: more memory O(n) 
+		Collision?
+			Linked List
+	🎁Graphs
+		Shortest Path?
+			🚀 Bellman-Ford
+			🚀 Dijkstra
+		Cyclic or Acyclic?
+		Weighted or Unweighted?
+		Graph Traversal? **O(n)**
+			🚀 Breadth First Search (BFS)
+			🚀 Depth First Search (DFS)
+				Inorder
+				Postorder
+				Preorder
+		Directed or Undirected?
+		🎁Tree
+			 Tree Traversal? **O(n)**
+				
+				
+				**Recursion?**
+					Be mindful of Space Complexity! (Stack overflow)
+			🎁Linked List
+				🎁Singly Linked List
+					| prepend|  O(1)
+		    			| append |  O(1)
+					| lookup |  O(n)
+					| insert |  O(n)
+					| delete |  O(n) 
+				🎁Doubly Linked List 
+					
+			🎁Binary Tree
+				🎁Binary Search Tree
+					🎁Balanced BST
+						🎁AVL Tree
+						🎁Red Black Tree				 	    				
+						| lookup |  O(logN)
+						| insert |  O(logN)
+						| delete |  O(logN) 
+			🎁Heap
+				🎁Binary Heap
+		 			| lookup |  O(N)
+					| insert |  O(logN)
+					| delete |  O(logN) 
+				Priority Queue
+
+			🎁Trie
+	🎁Arrays
+		Sorting? ~ **O(N log N)**
+			Radix Sort 🚀
+			Quick Sort 🚀
+			Heap Sort 🚀
+			Bubble Sort 🚀
+			Selection Sort 🚀
+			Insertion Sort 🚀
+			Merge Sort 🚀
+			Counting Sort 🚀
+		String question? 
+			Turn it into an Array ~ split() 🚀
+		Static
+			 | lookup |    O(1)
+			 | push   |    O(1)
+			 | insert |    O(n)
+		         | delete |    O(n) 
+		   
+		Dynamic
+			 | lookup |    O(1)
+			 | append*|    O(1)
+			 | insert |    O(n)
+		         | delete |    O(n) 
+		
+			** can be O(n) on expanding memory
+	        Searching. Is it sorted?
+			Yes - Divide and Conquer - **Binary search O(log N)** 🚀
+			No. Will sorting make it faster? If still no, **Linear Search**🚀
+			No. Is it a String? See if a **Trie** data structure helps
+	🎁Stacks
+		Array Stack
+		Linked List Stack
+		         | lookup |    O(n)
+			 | pop    |    O(1)
+			 | push   |    O(1)
+		         | peek   |    O(1) 
+	🎁Queues
+		Array Queue (BAD)
+		Linked List Queue
+			 | lookup |    O(n)
+			 | enqueue|    O(1)
+			 | dequeue|    O(1)
+		         | peek   |    O(1) 
+	Dynamic Programming
+		🚀Memoization</p>
+	
+</details> 
