@@ -110,7 +110,7 @@
 
 --------------------
 
-## Algorithms##.
+## Algorithms ##.
 
 ## Sorting ##
 
