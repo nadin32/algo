@@ -8,14 +8,14 @@
 
 |Sorting Algorithm|Average Case|Best Case|Worst Case| 
 |-----------------|------------|---------|----------|  
-|Bubble Sort |O(n2)| O(n) | O(n2)|  
-|Insertion Sort|O(n2)| O(n) | O(n2)|  
-|Selection Sort|O(n2)| O(n2) | O(n2)|   
-|Quick Sort|O(n.log(n))|O(n.log(n))|O(n2)|  
+|Bubble Sort |O(n^2)| O(n) | O(n^2)|  
+|Insertion Sort|O(n^2)| O(n) | O(n^2)|  
+|Selection Sort|O(n^2)| O(n^2) | O(n^2)|   
+|Quick Sort|O(n.log(n))|O(n.log(n))|O(n^2)|  
 |Merge Sort|O(n.log(n))|O(n.log(n))|O(n.log(n))|  
 |Heap Sort|O(n.log(n))|	O(n.log(n))|	O(n.log(n))|
 |Counting Sort|O(n+k)|	O(n+k)|	O(n+k)|  
-|Radix Sort|O(n*k)|	O(n*k)|	O(n*k)|  
+|Radix Sort|O(n.k)|	O(n.k)|	O(n.k)|  
 |Bucket Sort|O(n+k)|	O(n+k)|	O(n2) |
 |-----------------|------------|---------|----------|  
 |-----------------|------------|---------|----------|  
