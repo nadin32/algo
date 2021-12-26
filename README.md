@@ -4,11 +4,21 @@
 		   [**Master the Interview Click here for Course Link** ](https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms)
 		   
 	🎁Hash Tables
-		           
-		space      O(n)
-		insert     O(1)
-		lookup     O(1)   
-		delete     O(1) 
+		<table>
+		<tr>	
+		<td>space</><td>      O(n)</>
+		</tr>	
+			<tr>	
+		<td>insert/><td>      O(1)</>
+		</tr>
+			<tr>	
+		<td>lookup</><td>      O(1)</>
+		</tr>
+			<tr>	
+		<td>delete</><td>      O(1)</>
+		</tr>
+
+		</table>	
 		   
 		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
 		Improve Time Complexity?
