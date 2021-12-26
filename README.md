@@ -5,10 +5,10 @@
 		   
 	🎁Hash Tables
 		
-		**space**   O(n)
-		**insert**  O(1)
-		**lookup**  O(1)
-		**delete**  O(1) 
+		| space |   O(n)
+		| insert|  O(1)
+		| lookup|  O(1)
+		| delete|  O(1) 
 		   
 		***could be O(n) with hash collisions and dynamic array resizing but unlikely*
 		
@@ -37,19 +37,28 @@
 					Be mindful of Space Complexity! (Stack overflow)
 			🎁Linked List
 				🎁Singly Linked List
-					 ![image](attached://7df06ec4ad27f2f697ec682ddb5aed6c 125x150)
+					| prepend|  O(1)
+		    			| append |  O(1)
+					| lookup |  O(n)
+					| insert |  O(n)
+					| delete |  O(n) 
 				🎁Doubly Linked List 
 					
 			🎁Binary Tree
 				🎁Binary Search Tree
 					🎁Balanced BST
 						🎁AVL Tree
-						🎁Red Black Tree
-						![image](attached://1cbd9dae9e063cb5b0294abfc41bc600 125x150)
+						🎁Red Black Tree				 	    				
+						| lookup |  O(logN)
+						| insert |  O(logN)
+						| delete |  O(logN) 
 			🎁Heap
 				🎁Binary Heap
-					Priority Queue
-					![image](attached://26b117268285c9e89ade0640e6ca4147 125x150)
+		 			| lookup |  O(N)
+					| insert |  O(logN)
+					| delete |  O(logN) 
+				Priority Queue
+
 			🎁Trie
 	🎁Arrays
 		Sorting? ~ **O(N log N)**
@@ -64,16 +73,16 @@
 		String question? 
 			Turn it into an Array ~ split() 🚀
 		Static
-			 **lookup**   O(1)
-			 **push**    O(1)
-			 **insert**  O(n)
-		         **delete**  O(n) 
+			 | lookup |    O(1)
+			 | push   |    O(1)
+			 | insert |    O(n)
+		         | delete |    O(n) 
 		   
 		Dynamic
-			 **lookup**   O(1)
-			 **append***    O(1)
-			 **insert**  O(n)
-		         **delete**  O(n) 
+			 | lookup |    O(1)
+			 | append*|    O(1)
+			 | insert |    O(n)
+		         | delete |    O(n) 
 		
 			** can be O(n) on expanding memory
 	        Searching. Is it sorted?
@@ -83,11 +92,17 @@
 	🎁Stacks
 		Array Stack
 		Linked List Stack
-		![image](attached://a03fa110a9697e07ac4979d9e8a61d57 125x150)
+		         | lookup |    O(n)
+			 | pop    |    O(1)
+			 | push   |    O(1)
+		         | peek   |    O(1) 
 	🎁Queues
 		Array Queue (BAD)
 		Linked List Queue
-		![image](attached://afc27bd2c74ddef65f4905665d511006 125x150)
+			 | lookup |    O(n)
+			 | enqueue|    O(1)
+			 | dequeue|    O(1)
+		         | peek   |    O(1) 
 	Dynamic Programming
 		🚀Memoization</p>
 	
