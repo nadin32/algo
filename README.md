@@ -186,6 +186,8 @@ Algorithm BFS(G, v)
 
 **5.Dijkstra**
 
+Applied for weighthed graph (with positive weights)
+
 Links : https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e
         https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/
 
