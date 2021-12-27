@@ -84,28 +84,19 @@ The time complexity of the BFS algorithm is represented in the form of O(V + E),
 
 The space complexity of the algorithm is O(V).
  mark and enqueue all (unvisited) neighbours of u
-
+```
 Algorithm BFS(G, v)
-
     create Q ← new empty FIFO queue
-    
     Mark v as visited .
-  
-    Q.enqueue(v)   //put v in into Q 
-    
+    Q.enqueue(v)   //put v in into Q     
     while Q is not empty
-        
         u ← Q.dequeue() //remove the head  u of Q
-        
         // Perform some operation on u.
-        
         for all unvisited neighbors x of u
-        
-            Mark x as visited.
+            Mark x as visited. 
+           Q.enqueue(x) // put x into Q
             
-            Q.enqueue(x) // put x into Q
-            
-
+```
 
 **4.DepthFirst Search** 
             
@@ -142,23 +133,45 @@ Space Complexity: O(V)
 
 ### Binary Heap ###
 
-Links: https://www.programiz.com/dsa/heap-sort
+Links: https://www.programiz.com/dsa/heap-sort.
+
+We use array as underlying struictire for binary heaps.
 
 **Heap Data Structure**
 
-A complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
+A ***complete binary tree*** is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
 
-Heap is a special tree-based data structure. A binary tree is said to follow a heap data structure if : it is a complete binary tree .
+Heap is is a complete binary tree .
 
-All nodes in the tree follow the property that they are greater than their children i.e. the largest element is at the root and both its children and smaller than 
-
-the root and so on. Such a heap is called a max-heap. If instead, all nodes are smaller than their children, it is called a min-heap
+All nodes in the tree follow the property that they are greater than their children i.e. the largest element is at the root and both its children and smaller than the root and so on. Such a heap is called a max-heap. If instead, all nodes are smaller than their children, it is called a min-heap
 
 **Relationship between Array Indexes and Tree Elements**
 
 A complete binary tree has an interesting property that we can use to find the children and parents of any node.
 
 If the index of any element in the array is i, the element in the index 2i+1 will become the left child and element in 2i+2 index will become the right child. Also, the parent of any element at index i is given by the lower bound of (i-1)/2.
+
+**How to "heapify" a tree**
+
+Starting from a complete binary tree, we can modify it to become a Max-Heap by running a function called heapify on all the non-leaf elements of the heap.
+```
+void heapify(int arr[], int n, int i) {
+  // Find largest among root, left child and right child 
+  int largest = i;  
+  int left = 2 * i + 1; 
+  int right = 2 * i + 2
+  if (left < n && arr[left] > arr[largest])
+    largest = left;
+
+  if (right < n && arr[right] > arr[largest])
+    largest = right;
+    // Swap and continue heapifying if root is not largest
+    if (largest != i) {
+      swap(&arr[i], &arr[largest]);
+      heapify(arr, n, largest);
+  }
+}
+```
 
 ------------------- 
  
