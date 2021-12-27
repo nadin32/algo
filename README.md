@@ -144,6 +144,21 @@ Space Complexity: O(V)
 
 Links: https://www.programiz.com/dsa/heap-sort
 
+**Heap Data Structure**
+
+A complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
+
+Heap is a special tree-based data structure. A binary tree is said to follow a heap data structure if : it is a complete binary tree .
+
+All nodes in the tree follow the property that they are greater than their children i.e. the largest element is at the root and both its children and smaller than 
+
+the root and so on. Such a heap is called a max-heap. If instead, all nodes are smaller than their children, it is called a min-heap
+
+**Relationship between Array Indexes and Tree Elements**
+
+A complete binary tree has an interesting property that we can use to find the children and parents of any node.
+
+If the index of any element in the array is i, the element in the index 2i+1 will become the left child and element in 2i+2 index will become the right child. Also, the parent of any element at index i is given by the lower bound of (i-1)/2.
 
 ------------------- 
  
