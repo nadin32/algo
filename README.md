@@ -28,12 +28,6 @@ Sorting animation:https://www.toptal.com/developers/sorting-algorithms
 |-----------------|------------|---------|----------|  |----------|-----------|-----------| 
 |-----------------|------------|---------|----------|  |----------|-----------|-----------| 
 
-			
-
-
-			
-
-	
 
 	
 
@@ -172,7 +166,23 @@ void heapify(int arr[], int n, int i) {
   }
 }
 ```
+**Build max-heap**
 
+To build a max-heap from any tree, we can thus start heapifying each sub-tree from the bottom up and end up with a max-heap after the function is applied to all the elements including the root element.
+```
+   // Build heap (rearrange array)
+    for (int i = n / 2 - 1; i >= 0; i--)
+      heapify(arr, n, i);
+```
+**Use binary heap for heap sort**
+
+Build Max heap (rearrange array elements using heapify () function )
+1. Since the tree satisfies Max-Heap property, then the largest item is stored at the root node.
+2.  Swap: Remove the root element and put at the end of the array (nth position) Put the last item of the tree (heap) at the vacant place.
+3. Remove: Reduce the size of the heap by 1.
+4. Heapify: Heapify the root element again so that we have the highest element at root.
+5. The process is repeated until all the items of the list are sorted.
+ 
 ------------------- 
  
 <details>
