@@ -35,7 +35,7 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-in
 	
 
 	 
-**Counting sort**
+***Counting sort***
 
 Counting sort is handy while sorting values whose range is not very large.
 
