@@ -222,7 +222,7 @@ Space Complexity: O(V)
 -------------------
 ## Detailed Data Structures ##
 
-### Binary Heap ###
+### 1. Binary Heap ###
 
 Links: https://www.programiz.com/dsa/heap-sort.
 
