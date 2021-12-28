@@ -19,9 +19,9 @@ Sorting animation:https://www.toptal.com/developers/sorting-algorithms
 |Quick Sort|O(n.log(n))|O(n.log(n))|O(n^2)|Divide & Conquer. There are many different versions of quickSort that pick pivot in different ways. the key is PARTITION of the list around pivot point. Divide: 1) Select a pivot element that will preferably end up close to the center of the sorted pack 2) Move everything onto the “greater than” or “less than” side of the pivot 3)The pivot is now in its final position 4) Recursively repeat the operation on both sides of the pivot .Conquer: Return a sorted array after all elements have been through the pivot operation  | 1)Stable sort 2)When implemented well, it can be somewhat faster than merge sort and about two or three times faster than heapsort.|-----------|O(logn)| 
 |Merge Sort|O(n.log(n))|O(n.log(n))|O(n.log(n))| Divide & Conquer. 1) Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted). 2) Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.  |----------|   1) Slower comparative to the other sort algorithms for smaller tasks. 2)  Merge sort algorithm requires an additional memory space of 0(n) for the temporary array. 3)  It goes through the whole process even if the array is sorted.|O(n)| 
 |Heap Sort|O(n.log(n))|	O(n.log(n))|	O(n.log(n))|(see descr.below under BinaryHeap DS) Heapsort is a comparison-based sorting algorithm. Heap sort works by presenting  the elements of the array as a special kind of complete binary tree called a heap.Heapsortcan be thought of as an improved selection sort: like selection sort,heapsort divides its input into a sorted and an unsorted region, and ititeratively shrinks the unsorted region by extracting the largest elementfrom it and inserting it into the sorted region. Unlike selection sort,heapsort does not waste time with a linear-time scan of the unsorted region;rather, heap sort maintains the unsorted region in a heap data structureto more quickly find the largest element in each step. |----------|-----------|O(1)| 
-|Counting Sort|O(n+k)|	O(n+k)|	O(n+k)| | ----------|-----------|O(k)| 
-|Radix Sort|O(n.k)|	O(n.k)|	O(n.k)|  |----------|-----------|O(n + k)| 
-|Bucket Sort|O(n+k)|	O(n+k)|	O(n2) ||----------|-----------|O(n)| 
+|Counting Sort|O(n+k)|	O(n+k)|	O(n+k)| | It sorts the elements of an array by counting the number of occurrences of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by mapping the count as an index of the auxiliary array.|There is no comparison between any elements, so it is better than comparison based sorting techniques.  1) Counting sort generally performs faster than all comparison-based sorting algorithms, such as merge sort and quicksort, if the range of input is of the order of the number of input 2)Counting sort is easy to code| 1) Counting sort doesn’t work on decimal values 2) Counting sort is inefficient if the range of values to be sorted is very large|O(k)| 
+|Radix Sort|O(n.k)|	O(n.k) n-max of the elments k-array size |	O(n.k)|  |----------|-----------|-----------|O(n + k)| 
+|Bucket Sort|O(n+k)|	O(n+k)|	O(n2) ||----------|-----------|-----------|O(n)| 
 |-----------------|------------|---------|----------|  |----------|-----------|-----------| 
 |-----------------|------------|---------|----------|  |----------|-----------|-----------| 
 |-----------------|------------|---------|----------|  |----------|-----------|-----------| 
@@ -31,9 +31,38 @@ Sorting animation:https://www.toptal.com/developers/sorting-algorithms
 	
 
 	 
+**Counting sort**
 
+Counting sort is handy while sorting values whose range is not very large.
+
+good illustration : https://www.cs.bgu.ac.il/~ds142/wiki.files/ds142_ps11_updated.pdf
+links (pseudo algo.)  : https://www.programiz.com/dsa/counting-sort
+
+The Counting sort typically has 3 steps
+```
+Input Data : 1, 4, 1, 2, 7, 5, 2
+
+    1. Create Count array to store count of each individual object
+     So for the above input data, 1 appears twice so in count array, index 1 stores value 2, for 4, index 4 stores 1 and so on..
+     So Count Array becomes —
+	index   0 1 2 3 4 5 6 7 8 9
+	count   0 2 2 0 1 1 0 1 0 0
+
+    2.  Modify the count array to cumulate the sum with increasing index.
+ 	 So count at index 1 becomes (0+2)=2, at index 2 becomes (2+2)=4 and so on…
+ 	 index   0 1 2 3 4 5 6 7 8 9
+	 count   0 2 4 4 5 6 6 7 7 7
+
+	This modified count array represents the position of each object.
+
+     3. Now use the original data with count array to determine position of each object in sorted array.
+	 So for 1 (original data), at index 1 (in count array) the value is 2, so place 1 at index 2 in sorted array.
+	 After every determination reduce the count in count array by 1.
+	 So, value at index array after determining position of 1 (original data) becomes 1.
+	 Similarly place 4 at position 5, and reduce the value by 1.
 	
-
+```
+Sorting lecture notes:
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
 
 ## Searches ##
