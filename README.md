@@ -10,6 +10,10 @@ BIG O sheet: https://www.bigocheatsheet.com/
 
 
 Sorting animation:https://www.toptal.com/developers/sorting-algorithms 
+Sorting lecture notes:
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
+
+
 
 |Sorting Algorithm|Average Case|Best Case|Worst Case|description| advantages| disadvantages|space complexity|
 |-----------------|------------|---------|----------|-----------| ----------|-----------| -----------| 
@@ -63,7 +67,7 @@ Input Data : 1, 4, 1, 2, 7, 5, 2
 	
 ```
 
-***Radix sort**
+***Radix sort***
 What if the elements are in the range from 1 to n2? 
 We can’t use counting sort because counting sort will take O(n2) which is worse than comparison-based sorting algorithms. Can we sort such an array in linear time? 
 
@@ -94,7 +98,7 @@ Sorting by next digit (10s place) gives:
 Sorting by the most significant digit (100s place) gives:
 2, 24, 45, 66, 75, 90, 170, 802
 ```
-***Bucket sort**
+***Bucket sort***
 ```
 Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem. 
 Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range. How do we sort the numbers efficiently?
@@ -129,8 +133,6 @@ Then sort elemnst in ech backet using insertion sort.
 Step 3: Gather the element form each bucket. 
 1,2,6,8,11,25
 ```
-Sorting lecture notes:
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
 
 ## Searches ##
 
