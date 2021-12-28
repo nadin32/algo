@@ -21,7 +21,7 @@ Sorting animation:https://www.toptal.com/developers/sorting-algorithms
 |Heap Sort|O(n.log(n))|	O(n.log(n))|	O(n.log(n))|(see descr.below under BinaryHeap DS) Heapsort is a comparison-based sorting algorithm. Heap sort works by presenting  the elements of the array as a special kind of complete binary tree called a heap.Heapsortcan be thought of as an improved selection sort: like selection sort,heapsort divides its input into a sorted and an unsorted region, and ititeratively shrinks the unsorted region by extracting the largest elementfrom it and inserting it into the sorted region. Unlike selection sort,heapsort does not waste time with a linear-time scan of the unsorted region;rather, heap sort maintains the unsorted region in a heap data structureto more quickly find the largest element in each step. |----------|-----------|O(1)| 
 |Counting Sort|O(n+k) n-max of the elments k-array size |	O(n+k)|	O(n+k)| It sorts the elements of an array by counting the number of occurrences of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by mapping the count as an index of the auxiliary array.|There is no comparison between any elements, so it is better than comparison based sorting techniques.  1) Counting sort generally performs faster than all comparison-based sorting algorithms, such as merge sort and quicksort, if the range of input is of the order of the number of input 2)Counting sort is easy to code 3)stabele  sort. |  1) Counting sort doesn’t work on decimal values 2) Counting sort is inefficient if the range of values to be sorted is very large|O(k)| 
 |Radix Sort| O(n.k) |	O(n.k) |	O(n.k) |The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort. |Radix sort has linear time complexity which is better than O(nlog n) of comparative sorting algorithms.|If we take very large digit numbers or the number of other bases like 32-bit and 64-bit numbers then it can perform in linear time however the intermediate sort takes large space. This makes radix sort space inefficient. This is the reason why this sort is not used in software libraries.|O(n + k)| 
-|Bucket Sort| O(n+k) |	O(n+k) |	O(n2)  |----------|-----------|-----------|O(n)| 
+|Bucket Sort| O(n+k) |	O(n+k) |	O(n2)  |Bucket sort is a sorting algorithm that separate the elements into multiple groups said to be buckets. Elements in bucket sort are first uniformly divided into groups called buckets, and then they are sorted by any other sorting algorithm.|1) Bucket sort is stable, if the underlying sort is also stable, as equal keys are inserted in order to each bucket.2)Bucket sort allows each bucket to be processed independently. As a result, you'll frequently need to sort much smaller arrays as a secondary step after sorting the main array. 3) Bucket sort to be used as an external sorting algorithm. If you need to sort a list that is too large to fit in memory, you may stream it through RAM, split the contents into buckets saved in external files, and then sort each file separately in RAM. | worst case occurs when the elements are of the close range in the array, because of that, they have to be placed in the same bucket. So, some buckets have more number of elements than others.The complexity will get worse when the elements are in the reverse order.|O(n.k)| 
 |-----------------|------------|---------|----------|----------|-----------|-----------|-----------| 
 |-----------------|------------|---------|----------|----------|-----------|-----------|-----------|
 |-----------------|------------|---------|----------|----------|-----------|-----------|-----------|
@@ -101,12 +101,33 @@ Sort a large set of floating point numbers which are in range from 0.0 to 1.0 an
 A simple way is to apply a comparison based sorting algorithm. The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is Ω(n Log n), i.e., they cannot do better than nLogn. 
 Can we sort the array in linear time? Counting sort can not be applied here as we use keys as index in counting sort. Here keys are floating point numbers. 
 
+Because of the way elements are assigned to buckets, typically using an array where the index is the value, bucket sorting can be extremely fast.
+This means that more auxiliary memory for the buckets is required at the expense of running time than more comparison sorts.
+By dividing data into small buckets that can be sorted individually, the number of comparisons that must be performed is reduced.
+
+
+
 bucketSort(arr[], n)
 1) Create n empty buckets (Or lists).
 2) Do following for every array element arr[i].
 .......a) Insert arr[i] into bucket[n*array[i]]
 3) Sort individual buckets using insertion sort.
 4) Concatenate all sorted buckets.
+
+For example: Suppose we have the following array, which we have to sort.
+11	8	6	1	25	2
+
+Step 1: Create a new array, and this array size is 10. Every field of this array is used as a bucket.  
+5 backets: 1-5 6-10 11-15 16-20 21-25 
+
+Step 2: Insert the array element into the new array bucket, and these elements will be added according to the range of the bucket.  
+Then sort elemnst in ech backet using insertion sort. 
+1,2 => backet 1-5
+6,8 => backet 6-10
+11 => backet 11-15
+25 => backet 21-25
+Step 3: Gather the element form each bucket. 
+1,2,6,8,11,25
 ```
 Sorting lecture notes:
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/lecture-notes/MIT6_006S20_lec5.pdf
