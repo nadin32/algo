@@ -182,7 +182,8 @@ order of their distance from the source vertex,where distance is the minimum len
 The time complexity of the BFS algorithm is represented in the form of O(V + E), where V is the number of nodes and E is the number of edges.
 
 The space complexity of the algorithm is O(V).
- mark and enqueue all (unvisited) neighbours of u
+BFS will have to store at least an entire level of the tree in the queue (sample queue implementation). With a perfect fully balanced binary tree, this would be (n/2 + 1) nodes (the very last level). Best Case (in this context), the tree is severely unbalanced and contains only 1 element at each level and the space complexity is O(1). Worst Case would be storing (n - 1) nodes with a fairly useless N-ary tree where all but the root node are located at the second level.
+
 ```
 Algorithm BFS(G, v)
     create Q ← new empty FIFO queue
@@ -197,8 +198,32 @@ Algorithm BFS(G, v)
             
 ```
 
-**4.DepthFirst Search** 
-            
+**4.DepthFirst Search**
+
+Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. So the basic idea is to start from the root or any arbitrary node and mark the node and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally, print the nodes in the path.
+
+Depth First Traversals: 
+      1
+     /  \
+   2     3
+  / \ 
+4    5 
+
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3 
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+Breadth-First or Level Order Traversal: 1 2 3 4 5 
+
+Depth First Traversal (or Search) for a graph is similar to Depth First Traversal of a tree. The only catch here is, unlike trees, graphs may contain cycles (a node may be visited twice). To avoid processing a node more than once, use a boolean visited array. 
+
+**DFS Algorithm Complexity**
+
+For graphs :
+    Time complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
+    Space Complexity: O(V), since an extra visited array of size V is required.
+For trees : 
+    Time Complexity: O(n)  where n - number of nodes
+    Space complexity : O(h) where h is the height of the tree. 
 
 **5.Dijkstra**
 
