@@ -98,7 +98,9 @@ Sorting by next digit (10s place) gives:
 Sorting by the most significant digit (100s place) gives:
 2, 24, 45, 66, 75, 90, 170, 802
 ```
+
 ***Bucket sort***
+
 ```
 Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem. 
 Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range. How do we sort the numbers efficiently?
@@ -108,8 +110,6 @@ Can we sort the array in linear time? Counting sort can not be applied here as w
 Because of the way elements are assigned to buckets, typically using an array where the index is the value, bucket sorting can be extremely fast.
 This means that more auxiliary memory for the buckets is required at the expense of running time than more comparison sorts.
 By dividing data into small buckets that can be sorted individually, the number of comparisons that must be performed is reduced.
-
-
 
 bucketSort(arr[], n)
 1) Create n empty buckets (Or lists).
@@ -152,7 +152,15 @@ Linear search is rarely used practically because other search algorithms such as
 
 ### 2.Binary search  ##
 
+```
+When the list is sorted we can use the binary search technique to find items on the list. The entire list is divided into two sub-lists. If the item is found in the middle position, it returns the location, otherwise jumps to either left or right sub-list and do the same process again until finding the item or exceed the range.
 
+Performance.
+
+    Time Complexity: O(1) for the best case. O(log2 n) for average or worst case.
+    Space Complexity: O(1) 
+
+```
 
 ### 3.BFS  ##
 
