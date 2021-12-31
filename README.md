@@ -172,6 +172,8 @@ Links: https://www.khanacademy.org/computing/computer-science/algorithms/breadth
        https://www.programiz.com/dsa/graph-bfs
  
        https://github.com/maximelamure/algorithms/blob/master/datastructure/graph_bfs.go
+       
+       Visualization: https://www.cs.usfca.edu/~galles/visualization/BFS.html 
 
 
 Breadth–first search (BFS) is a graph traversal algorithm that explores vertices in the
@@ -200,6 +202,8 @@ Algorithm BFS(G, v)
 ```
 
 **4.DepthFirst Search**
+
+Visualization : https://www.cs.usfca.edu/~galles/visualization/DFS.html
 
 Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. So the basic idea is to start from the root or any arbitrary node and mark the node and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally, print the nodes in the path.
 
