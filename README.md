@@ -271,6 +271,16 @@ Space Complexity: O(V)
 
 ## Dynamic Programming ##
 
+Divide &Conquer + Memoization.
+
+When to use:
+
+1. Can be divided into subproblems
+2. Recursive solutions.
+3. Are there repwtetive subproblems.
+4. Memoize subproblems.
+ 
+
 --------------------
 
 ## Detailed Data Structures ##
