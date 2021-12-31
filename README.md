@@ -225,6 +225,16 @@ For graphs :
 For trees : 
     Time Complexity: O(n)  where n - number of nodes
     Space complexity : O(h) where h is the height of the tree. 
+    
+```    
+Algorithm DFS(G, v)
+    if v is already visited
+        return        
+    Mark v as visited.
+    // Perform some operation on v.
+    for all neighbors x of v
+        DFS(G, x)
+```
 
 **5.Dijkstra**
 
