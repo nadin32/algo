@@ -268,6 +268,11 @@ Space Complexity: O(V)
 ….c) Update distance value of all adjacent vertices of u. To update the distance values, iterate through all adjacent vertices. For every adjacent vertex v, if the sum of distance value of u (from source) and weight of edge u-v, is less than the distance value of v, then update the distance value of v. 
 
 -------------------
+
+## Dynamic Programming ##
+
+--------------------
+
 ## Detailed Data Structures ##
 
 ### 1. Binary Heap ###
