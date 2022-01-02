@@ -21,3 +21,4 @@ func MemoizationCalc() func(int) int {
 		return cachemap[n]
 	}
 }
+
