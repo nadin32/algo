@@ -1,11 +1,12 @@
 package dynamic
 
-/* The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum.
+/* The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array
+of numbers which has the largest sum.
 
 Example:
 
 int [] A = {−2, 1, −3, 4, −1, 2, 1, −5, 4};
-Output: contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6. 
+Output: contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
 
 Bottom-Up approach
 “MS(i)  is maximum sum ending at index i”
